@@ -1,6 +1,8 @@
-# Problem-1-Anagram
-# function that checks if two words are each other's anagrams
+//# Problem-1-Anagram
+//#Below is the function that checks if two words are each other's anagrams using character array.
+//get charector of each string
 public static boolean isAnagrm(String s1, String s2) {
+   //compare both the arrays
    if (s1.length() != s2.length()) {
       return false;
    }
