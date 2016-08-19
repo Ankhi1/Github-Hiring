@@ -1,0 +1,17 @@
+# Problem-1-Anagram
+# function that checks if two words are each other's anagrams
+public static boolean isAnagrm(String s1, String s2) {
+   if (s1.length() != s2.length()) {
+      return false;
+   }
+   char[] chars = s1.toCharArray();
+   for (char ch : chars) {
+      int i = s2.indexOf(ch);
+      if (i != -1) {
+         s2 = s2.substring(0, i) + s2.substring(i + 1, s2.length());
+      } else {
+         return false;
+      }
+   }
+   return s2.isEmpty();
+}
