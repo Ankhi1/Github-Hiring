@@ -1,0 +1,9 @@
+#A function that will take a nested array and return a single flattened sorted array.
+
+var arr = [[1, 2, 3, [4, 6, [7, 8]], 5, 9, 10]];
+
+arr = arr.reduce(function(a, b){
+    return a.concat(b);
+});
+
+alert(arr);
